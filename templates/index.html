@@ -1,0 +1,547 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+    <title>Rahul's Portfolio</title>
+    <meta content="" name="description" />
+    <meta content="" name="keywords" />
+
+    <link rel="icon" type="image" href="{% static 'assets/img/contact.jpg' %}" >
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" />
+
+    <!-- Vendor CSS Files -->
+    <link href="{% static 'assets/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet" />
+    <link href="{% static 'assets/vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet" />
+    <link href="{% static 'assets/vendor/aos/aos.css' %}" rel="stylesheet" />
+    <link href="{% static 'assets/vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet" />
+    <link href="{% static 'assets/vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet" />
+
+    <!-- Main CSS File -->
+    <link href="{% static 'assets/css/main.css' %}" rel="stylesheet" />
+  </head>
+
+  <body class="index-page">
+    <header id="header" class="header dark-background d-flex flex-column">
+      <i class="header-toggle d-xl-none bi bi-list"></i>
+
+      <div class="profile-img">
+        <img src="{% static 'assets/img/rahul-icon.jpg' %}" alt="" class="img-fluid rounded-circle" />
+      </div>
+
+      <a href="index.html" class="logo d-flex align-items-center justify-content-center"><h1 class="sitename">Rahul Gummula</h1></a>
+
+      <div class="social-links text-center">
+        <a href="https://www.linkedin.com/in/rahulgummula9/" class="linkedin"><i class="bi bi-linkedin"></i></a>
+        <a href="https://github.com/Rahul010803/" class="github"><i class="bi bi-github"></i></a>
+        <a href="https://x.com/rahulgummula9" class="twitter"><i class="bi bi-twitter-x"></i></a>
+      </div>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li>
+            <a href="#hero" class="active"><i class="bi bi-house navicon"></i>Home</a>
+          </li>
+          <li>
+            <a href="#about"><i class="bi bi-person navicon"></i> About</a>
+          </li>
+          <li>
+            <a href="#skills"><i class="bi bi-lightbulb navicon"></i> Skills</a>
+          </li>
+          <li>
+            <a href="#resume"><i class="bi bi-file-earmark-text navicon"></i> Resume</a>
+          </li>
+          <li>
+            <a href="#portfolio"><i class="bi bi-images navicon"></i> Projects</a>
+          </li>
+          <li>
+            <a href="#contact"><i class="bi bi-envelope navicon"></i> Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main">
+      <!-- Hero Section -->
+      <section id="hero" class="hero section dark-background">
+        <img src="{% static 'assets/img/cse.jpg' %}" alt="" data-aos="fade-in" class="" />
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+          <p>Hello,</p>
+          <h2>Rahul</h2>
+          <h2>Gummula</h2>
+          <p>
+            I'm <span class="typed" data-typed-items="Developer, Freelancer, Student"></span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span>
+          </p>
+        </div>
+      </section>
+      <!-- /Hero Section -->
+
+      <!-- About Section -->
+      <section id="about" class="about section">
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+          <h2>About</h2>
+          <p>As a motivated and ambitious fresher, I am eager to embark on a career in software development. My educational background, coupled with my passion for technology, has equipped me with a strong foundation in programming and problem-solving skills. I am enthusiastic about contributing to dynamic software development projects and eager to learn and grow in a collaborative and innovative environment</p>
+        </div>
+        <!-- End Section Title -->
+
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+          <div class="row gy-4 justify-content-center">
+            <div class="col-lg-4">
+              <img src="{% static 'assets/img/rahul-icon.jpg' %}" class="img-fluid" alt="My Profile Image" />
+            </div>
+            <div class="col-lg-8 content">
+              <h2>Python Developer.</h2>
+              <p class="fst-italic py-3">Motivated developer with hands-on experience in Python and Django projects, proficient in building web applications and solving complex problems</p>
+              <div class="row">
+                {% comment %} <div class="col-lg-6"> {% endcomment %}
+                  <ul>
+                    <li>
+                      <i class="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span>1 August 2003</span>
+                    </li>
+                    <li>
+                      <i class="bi bi-chevron-right"></i> <strong>Languages:</strong> <span>English, Hindi, Telugu & Marathi</span>
+                      
+                    </li>
+                    <li>
+                      <i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>+91 9773554421</span>
+                    </li>
+                    <li>
+                      <i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>Mumbai, Maharashtra, India</span>
+                    </li>
+                    <li>
+                      <i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span>21</span>
+                    </li>
+                    <li>
+                      <i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>B.E in CSE(IoT & CSBT) - (2021-2025)</span>
+                    </li>
+                    <li>
+                      <i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>rahulgummula9@gmail.com</span>
+                    </li>
+                    <li>
+                      <i class="bi bi-chevron-right"></i> <strong>Freelance:</strong> <span>Available</span>
+                    </li>
+                  </ul>
+                </div>
+
+              <p class="py-3"></p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /About Section -->
+
+      <!-- Skills Section -->
+      <section id="skills" class="skills section light-background">
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+          <h2>Skills</h2>
+          <p>These are some of the major languages, technologies, tools and platforms I have worked with: </p>
+        </div>
+        <!-- End Section Title -->
+
+        <div class="container">
+          <div>
+            <h3>Languages &amp; Databases</h3>
+            <div style="display: inline-block;">
+              <img src="{% static 'assets/img/skills/python.png' %}" alt="Python" style="height: 75px; width: 75px; margin: 10px 10px 0px;" /><p>Python</p>
+            </div>
+            <div style="display: inline-block;">
+              <img src="{% static 'assets/img/skills/js.png' %}" alt="JavaScript" style="height: 75px; width: 75px; margin: 10px 10px 0px;" /><p>JavaScript</p>
+            </div>
+            <div style="display: inline-block;">
+              <img src="{% static 'assets/img/skills/mysql.png' %}" alt="MySQL" style="height: 75px; width: 75px; margin: 10px 10px 0px;" /><p>MySQL</p>
+            </div>
+          </div>
+          <div>
+            <br /><h3>Frameworks &amp; Technologies</h3><div style="display: inline-block;">
+              <img src="{% static 'assets/img/skills/django.png' %}" alt="Django" style="height: 75px; width: 75px; margin: 10px 10px 0px;" /><p>Django</p>
+            </div>
+            <div style="display: inline-block;">
+              <img src="{% static 'assets/img/skills/flask.png' %}" alt="Flask" style="height: 75px; width: 75px; margin: 10px 10px 0px;" /><p>Flask</p>
+            </div>
+            <div style="display: inline-block;">
+              <img src="{% static 'assets/img/skills/html.png' %}" alt="HTML" style="height: 75px; width: 75px; margin: 10px 10px 0px;" /><p>HTML</p>
+            </div>
+            <div style="display: inline-block;">
+              <img src="{% static 'assets/img/skills/css.png' %}" alt="CSS" style="height: 75px; width: 75px; margin: 10px 10px 0px;" /><p>CSS</p>
+            </div>
+          </div>
+          <div>
+            <br /><h3>Tools &amp; Platforms</h3><div style="display: inline-block;">
+              <img src="{% static 'assets/img/skills/vscode1.png' %}" alt="VS Code" style="height: 75px; width: 75px; margin: 10px 10px 0px;" /><p>VS Code</p>
+            </div>
+            <div style="display: inline-block;">
+              <img src="{% static 'assets/img/skills/git.png' %}" alt="Git" style="height: 75px; width: 75px; margin: 10px 10px 0px;" /><p>Git</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /Skills Section -->
+
+      <!-- Resume Section -->
+      <section id="resume" class="resume section">
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+          <h2>Resume</h2>
+          <a href="{% static 'assets/img/resume.jpg' %}" title="Click to zoom in" class="glightbox preview-link">Click To Open Full Resume <i class="bi bi-zoom-in"></i></a>
+          <p>Brief information about me and my background: </p>
+        </div>
+        <!-- End Section Title -->
+
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+              <h3 class="resume-title">Summary</h3>
+
+              <div class="resume-item pb-0">
+                <h4>Python Developer</h4>
+                <p>
+                  <em>Creative Python Developer with 3+ years of experience in building user-focused projects from concept to completion.</em>
+                </p>
+              </div>
+              <!-- End Resume Item -->
+
+              <h3 class="resume-title">Education</h3>
+              <div class="resume-item">
+                <h4>Bachelor of Engineering in Computer Science</h4>
+                <h5>2021 - 2025</h5>
+                <p>
+                  <em>Lokmanya Tilak College of Engineering, Khoparkhairane, Navi Mumbai</em>
+                </p>
+                <p>Currently pursuing my Bachelor's in Computer Science.</p>
+              </div>
+              <!-- End Resume Item -->
+
+              <div class="resume-item">
+                <h4>HSC</h4>
+                <h5>2019 - 2021</h5>
+                <p>
+                  <em>SIES College of Arts, Science & Commerce, Sion, Mumbai</em>
+                </p>
+                <p>Completed Higher Secondary Education.</p>
+              </div>
+
+              <div class="resume-item">
+                <h4>SSC</h4>
+                <h5>2006 - 2019</h5>
+                <p>
+                  <em>Holy Cross High School, Lower Parel, Mumbai</em>
+                </p>
+                <p>Completed Secondary School Education.</p>
+              </div>
+              <!-- End Resume Item -->
+            </div>
+
+            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+              <h3 class="resume-title">Professional Experience</h3>
+              
+              <!-- End Resume Item -->
+
+              <div class="resume-item">
+                <h4>Cyber Security Team Lead</h4>
+                <h5>September 2024 - Present</h5>
+                <p>
+                  <em>GDG on Campus LTCE</em>
+                </p>
+                <ul>
+                  <li>Managed Google Cohort 1 event logistics.</li>
+                  <li>Guided participants through tasks under time constraints.</li>
+                </ul>
+              </div>
+
+              <div class="resume-item">
+                <h4>Python Intern</h4>
+                <h5>July 2024 - September 2024</h5>
+                <p>
+                  <em>Upskill Campus</em>
+                </p>
+                <ul>
+                  <li>Developed a quiz application for various subjects.</li>
+                  <li>Created a clean and intuitive user interface for both users and developers.</li>
+                </ul>
+              </div>
+              <!-- End Resume Item -->
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /Resume Section -->
+
+      <!-- Portfolio Section -->
+      <section id="portfolio" class="portfolio section light-background">
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+          <h2>Projects</h2>
+          <p>All Projects Made By Me</p>
+        </div>
+        <!-- End Section Title -->
+
+        <div class="container">
+          <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+            <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
+              {% comment %} <li data-filter="*" class="filter-active">All</li>
+              <li data-filter=".filter-app">App</li>
+              <li data-filter=".filter-product">Product</li>
+              <li data-filter=".filter-branding">Branding</li>
+              <li data-filter=".filter-books">Books</li> {% endcomment %}
+            </ul>
+            <!-- End Portfolio Filters -->
+
+            <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+              <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+                <div class="portfolio-content h-100">
+                  <img src="{% static 'assets/img/portfolio/quiz-app.jpg' %}" class="img-fluid" alt="" />
+                  <div class="portfolio-info">
+                    <h4>Quiz Application</h4>
+                    <p>Quiz app containing questions of different subjects</p>
+                    <a href="{% static 'assets/img/portfolio/quiz-app.jpg' %}" title="quiz-app" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                    <a href="https://github.com/Rahul010803/django-quiz-app" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                  </div>
+                </div>
+              </div>
+              <!-- End Portfolio Item -->
+
+              <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+                <div class="portfolio-content h-100">
+                  <img src="{% static 'assets/img/portfolio/Pharmacy-Management-System.jpg' %}" class="img-fluid" alt="" />
+                  <div class="portfolio-info">
+                    <h4>Pharmacy Management System</h4>
+                    <p>Web app for medical store to manage inventory and billing</p>
+                    <a href="{% static 'assets/img/portfolio/Pharmacy-Management-System.jpg' %}" title="Pharmacy-Management-System" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                    <a href="https://github.com/Rahul010803/Pharmacy-Management-System-using-Blockchain" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                  </div>
+                </div>
+              </div>
+              <!-- End Portfolio Item -->
+
+              <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+                <div class="portfolio-content h-100">
+                  <img src="{% static 'assets/img/portfolio/diet-chat-bot.jpg' %}" class="img-fluid" alt="" />
+                  <div class="portfolio-info">
+                    <h4>Diet Chat Bot</h4>
+                    <p>Diet chatbot for diet plan generation based on body type</p>
+                    <a href="{% static 'assets/img/portfolio/diet-chat-bot.jpg' %}" title="Branding 1" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                    <a href="https://github.com/Rahul010803/Dietician-chatbot-Kivyapk" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                  </div>
+                </div>
+              </div>
+              <!-- End Portfolio Item -->
+
+              <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+                <div class="portfolio-content h-100">
+                  <img src="{% static 'assets/img/portfolio/todo-app.jpg' %}" class="img-fluid" alt="" />
+                  <div class="portfolio-info">
+                    <h4>Todo Web Application</h4>
+                    <p>Todo app for making todo list</p>
+                    <a href="{% static 'assets/img/portfolio/todo-app.jpg' %}" title="todo-app" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                    <a href="https://github.com/Rahul010803/todo-app-flask" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                  </div>
+                </div>
+              </div>
+              <!-- End Portfolio Item -->
+            </div>
+            <!-- End Portfolio Container -->
+          </div>
+        </div>
+      </section>
+      <!-- /Portfolio Section -->
+
+      <!-- Contact Section -->
+      <section id="contact" class="contact section">
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+          <h2>Contact</h2>
+          <p>Fill the form for any queries or contact me through email id or phone number</p>
+        </div>
+        <!-- End Section Title -->
+
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+          <div class="row gy-4">
+            <div class="col-lg-5">
+              <div class="info-wrap">
+                <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
+                  <i class="bi bi-geo-alt flex-shrink-0"></i>
+                  <div>
+                    <h3>Address</h3>
+                    <p>Worli, Mumbai, Maharashtra, India</p>
+                  </div>
+                </div>
+                <!-- End Info Item -->
+
+                <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
+                  <i class="bi bi-telephone flex-shrink-0"></i>
+                  <div>
+                    <h3>Call Me</h3>
+                    <p>+91 9773554421</p>
+                  </div>
+                </div>
+                <!-- End Info Item -->
+
+                <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
+                  <i class="bi bi-envelope flex-shrink-0"></i>
+                  <div>
+                    <h3>Email Us</h3>
+                    <p>rahulgummula9@gmail.com</p>
+                  </div>
+                </div>
+                <!-- End Info Item -->
+
+                <img src="{% static 'assets/img/contact.jpg' %}" frameborder="0" style="border:0; width: 100%; height: 270px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" />
+              </div>
+            </div>
+
+            <div class="col-lg-7">
+              <form id="contact-form" method="post" action="{% url 'index' %}" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
+                {% csrf_token %}
+                <div class="row gy-4">
+                  <div class="col-md-6">
+                    <label for="name-field" class="pb-2">Your Name</label>
+                    <input type="text" name="name" id="name-field" class="form-control" required="" />
+                  </div>
+
+                  <div class="col-md-6">
+                    <label for="email-field" class="pb-2">Your Email</label>
+                    <input type="email" class="form-control" name="email" id="email-field" required="" />
+                  </div>
+
+                  <div class="col-md-12">
+                    <label for="subject-field" class="pb-2">Subject</label>
+                    <input type="text" class="form-control" name="subject" id="subject-field" required="" />
+                  </div>
+
+                  <div class="col-md-12">
+                    <label for="message-field" class="pb-2">Message</label>
+                    <textarea class="form-control" name="message" rows="10" id="message-field" required=""></textarea>
+                  </div>
+
+                  <div class="col-md-12 text-center">
+                    <div class="loading" style="display:none;">Loading...</div>
+                    <div class="sent-message" style="display:none;"></div>
+
+                    <button type="submit">Send Message</button>
+                    <div class="error-message" style="display:none;"></div>
+                  </div>
+                </div>
+              </form>
+            </div>
+
+            <script>
+              const form = document.getElementById('contact-form')
+              const loading = document.querySelector('.loading')
+              const successMessage = document.querySelector('.sent-message')
+              const errorMessage = document.querySelector('.error-message')
+              
+              // Hide the messages initially
+              successMessage.style.display = 'none'
+              errorMessage.style.display = 'none'
+              
+              form.addEventListener('submit', function (e) {
+                e.preventDefault()
+              
+                // Show loading animation and hide the messages
+                loading.style.display = 'block'
+                successMessage.style.display = 'none'
+                errorMessage.style.display = 'none'
+              
+                const formData = new FormData(form)
+              
+                fetch("{% url 'index' %}", {
+                  method: 'POST',
+                  body: formData
+                })
+                  .then((response) => response.json())
+                  .then((data) => {
+                    console.log('Raw response data: ', data)
+                    loading.style.display = 'none'
+              
+                    // Reset the form after submission
+                    form.reset()
+              
+                    if (data.success) {
+                      // Show the success message
+                      console.log('Success message: ', data.message)
+                      successMessage.textContent = data.message
+                      successMessage.style.display = 'block'
+                      console.log('success')
+                      console.log('success1')
+                      // Hide error message if any (in case it was previously displayed)
+                      errorMessage.style.display = 'none'
+                    } else {
+                      // Show the error message
+                      console.log('Error message: ', data.message)
+                      errorMessage.textContent = data.message
+                      errorMessage.style.display = 'block'
+                      console.log('error')
+              
+                      // Hide success message if any (in case it was previously displayed)
+                      successMessage.style.display = 'none'
+                      console.log('error1')
+                    }
+                  })
+                  .catch((error) => {
+                    console.error('Error submitting form:', error)
+                    loading.style.display = 'none'
+                    // Handle unexpected errors
+                    errorMessage.textContent = 'An unexpected error occurred. Please try again later.'
+                    errorMessage.style.display = 'block'
+                    console.log('ec')
+              
+                    // Hide success message in case of error
+                    successMessage.style.display = 'none'
+                  })
+              })
+            </script>
+
+            <!-- End Contact Form -->
+          </div>
+        </div>
+      </section>
+      <!-- /Contact Section -->
+    </main>
+
+    <footer id="footer" class="footer position-relative light-background">
+      <div class="container">
+        <div class="copyright text-center">
+          <p>
+            © <span>Copyright</span> <strong class="px-1 sitename">iPortfolio</strong> <span>All Rights Reserved</span>
+          </p>
+        </div>
+        <div class="credits">
+          <!-- All the links in the footer should remain intact. -->
+          <!-- You can delete the links only if you've purchased the pro version. -->
+          <!-- Licensing information: https://bootstrapmade.com/license/ -->
+          <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+          Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scroll Top -->
+    <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+    <!-- Preloader -->
+    <div id="preloader"></div>
+
+    <!-- Vendor JS Files -->
+    <script src="{% static 'assets/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+    <script src="{% static 'assets/vendor/php-email-form/validate.js' %}"></script>
+    <script src="{% static 'assets/vendor/aos/aos.js' %}"></script>
+    <script src="{% static 'assets/vendor/typed.js/typed.umd.js' %}"></script>
+    <script src="{% static 'assets/vendor/purecounter/purecounter_vanilla.js' %}"></script>
+    <script src="{% static 'assets/vendor/waypoints/noframework.waypoints.js' %}"></script>
+    <script src="{% static 'assets/vendor/glightbox/js/glightbox.min.js' %}"></script>
+    <script src="{% static 'assets/vendor/imagesloaded/imagesloaded.pkgd.min.js' %}"></script>
+    <script src="{% static 'assets/vendor/isotope-layout/isotope.pkgd.min.js' %}"></script>
+    <script src="{% static 'assets/vendor/swiper/swiper-bundle.min.js' %}"></script>
+
+    <!-- Main JS File -->
+    <script src="{% static 'assets/js/main.js' %}"></script>
+  </body>
+</html>

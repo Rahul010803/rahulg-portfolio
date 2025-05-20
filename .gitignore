@@ -1,0 +1,13 @@
+.vercel
+build_files.sh
+db.sqlite3
+vercel.json
+
+/venv
+/app/__pycache__
+/app/migrations
+
+/portfolio/__pycache__ 
+/portfolio/settings.py
+
+/statics
